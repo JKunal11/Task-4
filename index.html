@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Fitness Planet</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* CSS reset */
+    body {
+      font-family: "Baloo Bhaijaan 2", cursive;
+      margin: 0px;
+      padding: 0px;
+      background: url("img/gym1.png.jpg");
+      color: white;
+     
+    }
+    .left {
+      position: absolute;
+      left: 34px;
+      top: 20px;
+      display: inline-block;
+      /* border: 2px solid red; */
+    }
+    .left img {
+      width: 89px;
+      filter: invert(100%);
+    }
+    .left div {
+      line-height: 1px;
+      font-size: 15px;
+
+      text-align: center;
+    }
+    .mid {
+      display: block;
+      width: 37%;
+      margin: 20px auto;
+      /* border: 2px solid green; */
+    }
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 28px;
+      display: inline-block;
+      /* border: 2px solid yellow; */
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      color: white;
+      display: inline-block;
+      font-size: 17px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 17px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: turquoise;
+    }
+    .btn {
+      font-family: "Baloo Bhaijaan 2", cursive;
+      margin: 5px 6px;
+      color: white;
+      background-color: tomato;
+      padding: 0px 5px;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: turquoise;
+    }
+    .container {
+      border: 2px solid turquoise;
+      position: absolute;
+      margin: 68px 35px;
+      padding: 23px 3px;
+      width: 33%;
+      border-radius: 8px;
+    }
+    .form-group input{
+        font-family: "Baloo Bhaijaan 2", cursive;
+        text-align: center;
+        display: block;
+        width: 40%;
+        padding: 8px;
+        border: 2px solid black;
+        margin: 11px auto;
+        width: 70%;
+        border-radius: 7px;
+        font-size: 15px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 73%;
+        margin: auto;
+    }
+
+  </style>
+  <body>
+    <header class="header">
+      <!-- Left Box For Logo -->
+      <div class="left">
+        <img src="img/logo.png" alt="" />
+        <div>Fitness Planet</div>
+      </div>
+      <!-- MidBox for navigation bar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active"> Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Right box For buttuns -->
+      <div class="right">
+        <button class="btn">CAll Us Now</button>
+        <button class="btn">E-mail Us Now</button>
+      </div>
+    </header>
+    
+    
+    <div class="container">
+        <h1>Join The Best Gym Of Pune Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+               <input type="text" name="placeholder" class="taxt" placeholder="Enter your name"> 
+            </div>
+            <div class="form-group">
+               <input type="text" name="placeholder" class="taxt" placeholder="Enter your age"> 
+            </div>
+            <div class="form-group">
+               <input type="text" name="placeholder" class="taxt" placeholder="Enter your gender"> 
+            </div>
+            <div class="form-group">
+                <input type="text" name="placeholder" class="taxt" placeholder="Enter your contact number"> 
+             </div>
+            <div class="form-group">
+            <div class="form-group">
+                <input type="text" name="placeholder" class="taxt" placeholder="Enter your E-mail "> 
+             </div>
+            <div class="form-group">
+               <input type="text" name="placeholder" class="taxt" placeholder="Enter your locality"> 
+            </div>
+            <button class="btn">Submit</button>
+           
+        </form>
+    </div>
+    
+   
+    
+  </body>
+ 
+</html>
